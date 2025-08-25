@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Gerador de QRCode</title>
 </head>
 <body>
-    
+    <main>
+        <div id="input">
+            <h1>Gerador de Qr Code</h1>
+            <span>Cole um link e gere seu QR em um clique.</span>
+            <section class="field">
+                <input type="text" name="" id="" placeholder="https://exemplo.com">
+                <button onclick="genQRCode()">Geral</button>
+            </section>
+        </div>
+        <div class="qr">
+            <img id="qrcode" alt="">
+            <span class="labelQr">O QR aparece aqui!!</span>
+        </div>
+        <a href="https://github.com/dev-Gui-Coelho" target="_blank"><img id="git"src="src/github.png" alt=""></a>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

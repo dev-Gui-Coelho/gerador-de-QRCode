@@ -1,0 +1,116 @@
+:root{
+    --bg:#f7f7fb;
+    --card:#ffffff;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --primary:#111827;
+    --ring:#e5e7eb;
+    --card2: #101217;
+
+}
+
+body{
+    background: radial-gradient(circle,#0f1218, #0b0c10);
+    width: 100%;
+    height: 100%;
+}
+main{
+    background-color: var(--card2);
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 76vh;
+    border: 0.1px solid var(--text);
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 60px auto;
+    box-shadow:0 10px 30px rgba(17,24,39,.06)
+}
+#input{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 90%;
+    margin-left: 26px;
+    padding-top: 30px;
+    gap: 20px;
+    /* background-color: blue; */
+    
+}
+h1{
+    color: var(--ring);
+    font-size: 30px;
+    font-family: sans-serif
+}
+span{
+    color: #9ca2ad;
+}
+
+input{
+    width: 70%;
+    padding: 12px 12px 12px 40px;
+    border-radius: 12px;
+    border: 1px solid #2a2f39;
+    border-top: 2px solid var(--muted);
+    background: #0f1218;
+    color: #e5e7eb;
+    font-size: 15px;
+    outline: none;
+}
+input[type=url]::placeholder {
+  color: #9ca3af; /* cinza suave */
+}
+.prefix {
+    position: absolute;
+    left: 12px;
+    top: 32%;
+    transform: translateY(-50%);
+    color: #9ca3af; 
+    font-size: 14px;
+}
+.field{
+    position: relative;
+    flex: 1;
+}
+button{
+    background-color: var(--ring);
+    padding-left:15px;
+    padding-right: 16px;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    margin-left: 15px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.qr{
+    border: 1px dashed var(--text);
+    border-radius: 20px;
+    height: 50%;
+    width: 90%;
+    margin-left: 26px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#git{
+    height: 20px;
+    filter: invert();
+    margin-left: 47%;
+    margin-top: 10px;
+}
+/* #qrcode{
+    height: 70%;
+    width: 40%;
+} */
+
+.labelQr{
+    margin-bottom: 13px;
+}
